@@ -82,13 +82,13 @@ export default function Marketplace() {
                         <Post title="JJs" time="10:10" price="7" posted="10" rating={5} name='Sahara' initial="SC" />
                     </Grid>
                     <Grid item xs={12}>
-                        <Post title="Hewitt" time="11:00" price="5" posted="124" rating={5} name='Mira' initial="MH" />
+                        <Post title="Hewitt" time="10:30" price="5" posted="124" rating={5} name='Mira' initial="MH" />
                     </Grid>
                     <Grid item xs={12}>
-                        <Post title="JJs" time="10:10" price="7" posted="10" rating={5} name='Sahara' initial="SC" />
+                        <Post title="JJs" time="11:10" price="7" posted="23" rating={5} name='Lucas' initial="LJ" />
                     </Grid>
                     <Grid item xs={12}>
-                        <Post title="Hewitt" time="11:00" price="5" posted="124" rating={5} name='Mira' initial="MH" />
+                        <Post title="Ferris" time="11:30" price="3" posted="0" rating={5} name='Tommy' initial="TJK" />
                     </Grid>
 
                 </Grid>

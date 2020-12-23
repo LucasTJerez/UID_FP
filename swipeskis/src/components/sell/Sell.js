@@ -10,6 +10,7 @@ import SwipeSlider from './SwipeSlider';
 import PriceSlider from './PriceSlider';
 import Datepicker from './Datepicker';
 import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 // import { FormHelperText } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +22,14 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     margin: theme.spacing(2)
-  }
+  },
+  scrollable: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(3),
+    maxHeight: '65vh',
+    overflowY: 'auto',
+    margin:'auto'
+},
 }));
 
 export default function CheckboxesGroup(props) {
@@ -41,9 +49,10 @@ export default function CheckboxesGroup(props) {
   const error = [JJs, JohnJay, Ferris, Hewitt].filter((v) => v).length !== 2;
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root}className={classes.scrollable}>
+      <Typography >Select a dining hall</Typography>
       <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">Select a dining hall</FormLabel>
+        
         <FormGroup row={true}>
           <FormControlLabel
             control={<Checkbox checked={JJs} disabled={JohnJay || Ferris || Hewitt} onChange={handleChange} name="JJs" />}
